@@ -7,7 +7,7 @@ import javafx.scene.layout.*;
 
 /**
  * Shows a dialog with the exception details.
- * reference: http://code.makery.ch/blog/javafx-dialogs-official/
+ * Reference: http://code.makery.ch/blog/javafx-dialogs-official/
  * @author rodemfa
  */
 public final class ExceptionDialog extends Alert {

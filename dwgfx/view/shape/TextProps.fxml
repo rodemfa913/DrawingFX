@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="5.0" vgap="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.shape.TextProps">
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints hgrow="ALWAYS" prefWidth="75.0" />
+		<ColumnConstraints hgrow="ALWAYS" prefWidth="75.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints valignment="TOP" />
+	</rowConstraints>
+	<children>
+		<Label text="Position:" />
+		<Spinner fx:id="xSpin" editable="true" GridPane.columnIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Spinner fx:id="ySpin" editable="true" GridPane.columnIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Font Family:" GridPane.rowIndex="1" />
+		<ComboBox fx:id="familyCombo" editable="true" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+		<Label text="Font Size:" GridPane.rowIndex="2" />
+		<Spinner fx:id="sizeSpin" editable="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="72.0" min="12.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Font Style:" GridPane.rowIndex="3" />
+		<CheckBox fx:id="boldCheck" mnemonicParsing="false" text="Bold" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<CheckBox fx:id="italicCheck" mnemonicParsing="false" text="Italic" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+		<Label text="Body:" GridPane.rowIndex="4">
+			<GridPane.margin>
+				<Insets top="3.0" />
+			</GridPane.margin>
+		</Label>
+		<TextArea fx:id="bodyText" prefHeight="100.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+			<font>
+				<Font name="Monospaced Regular" size="13.0" />
+			</font>
+		</TextArea>
+	</children>
+</GridPane>

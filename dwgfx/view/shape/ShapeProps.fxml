@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.* ?>
+<?import javafx.scene.text.Font?>
+
+<Accordion fx:id="accordion" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.shape.ShapeProps">
+	<panes>
+		<TitledPane fx:id="genTitledPane" text="General">
+			<content>
+				<AnchorPane fx:id="genAnchorPane" />
+			</content>
+		</TitledPane>
+		<TitledPane text="Style">
+			<content>
+				<AnchorPane>
+					<children>
+						<GridPane hgap="5.0" vgap="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<columnConstraints>
+								<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+								<ColumnConstraints hgrow="SOMETIMES" prefWidth="150.0" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints />
+								<RowConstraints />
+								<RowConstraints />
+								<RowConstraints />
+								<RowConstraints />
+								<RowConstraints />
+							</rowConstraints>
+							<children>
+								<Label text="Style Class:" />
+								<TextField fx:id="classText" GridPane.columnIndex="1" />
+								<Label text="Fill Color:" GridPane.rowIndex="1" />
+								<ColorPicker fx:id="fillColorPicker" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+								<Label text="Stroke Color:" GridPane.rowIndex="2" />
+								<ColorPicker fx:id="strokeColorPicker" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+								<Label text="Stroke Width:" GridPane.rowIndex="3" />
+								<Spinner fx:id="strokeWidthSpin" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+									<valueFactory>
+										<SpinnerValueFactory.DoubleSpinnerValueFactory max="5.0" min="0.0" />
+									</valueFactory>
+								</Spinner>
+								<Label text="Stroke Line Cap:" GridPane.rowIndex="4" />
+								<ComboBox fx:id="lineCapCombo" promptText="Line Cap" GridPane.columnIndex="1" GridPane.rowIndex="4">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<StrokeLineCap fx:value="BUTT" />
+											<StrokeLineCap fx:value="ROUND" />
+											<StrokeLineCap fx:value="SQUARE" />
+										</FXCollections>
+									</items>
+								</ComboBox>
+								<Label text="Stroke Line Join:" GridPane.rowIndex="5" />
+								<ComboBox fx:id="lineJoinCombo" promptText="Line Join" GridPane.columnIndex="1" GridPane.rowIndex="5">
+									<items>
+										<FXCollections fx:factory="observableArrayList">
+											<StrokeLineJoin fx:value="MITER" />
+											<StrokeLineJoin fx:value="ROUND" />
+											<StrokeLineJoin fx:value="BEVEL" />
+										</FXCollections>
+									</items>
+								</ComboBox>
+							</children>
+						</GridPane>
+					</children>
+				</AnchorPane>
+			</content>
+		</TitledPane>
+		<TitledPane text="Transform">
+			<content>
+				<AnchorPane>
+					<children>
+						<VBox spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<children>
+								<Label text="Transforms:" />
+								<TextArea fx:id="transText" prefHeight="200.0" prefWidth="200.0" wrapText="true">
+									<font>
+										<Font name="Monospaced Regular" size="13.0" />
+									</font>
+								</TextArea>
+							</children>
+						</VBox>
+					</children>
+				</AnchorPane>
+			</content>
+		</TitledPane>
+	</panes>
+</Accordion>

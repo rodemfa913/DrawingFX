@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" vgap="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.shape.ArcProps">
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints hgrow="SOMETIMES" prefWidth="75.0" />
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints hgrow="SOMETIMES" prefWidth="75.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+	<children>
+		<Label text="Center X:" />
+		<Spinner fx:id="cxSpin" editable="true" GridPane.columnIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Center Y:" GridPane.columnIndex="2" />
+		<Spinner fx:id="cySpin" editable="true" GridPane.columnIndex="3">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label fx:id="rxLabel" text="Radius X:" GridPane.rowIndex="1" />
+		<Spinner fx:id="rxSpin" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="800.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label fx:id="ryLabel" text="Radius Y:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+		<Spinner fx:id="rySpin" editable="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="800.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label fx:id="startLabel" text="Start Angle:" GridPane.rowIndex="2" />
+		<Spinner fx:id="startSpin" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="359.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label fx:id="lengthLabel" text="Length:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+		<Spinner fx:id="lengthSpin" editable="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="360.0" min="1.0" />
+			</valueFactory>
+		</Spinner>
+	</children>
+</GridPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" vgap="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.shape.RectProps">
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints prefWidth="100.0" />
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints prefWidth="100.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+	<children>
+		<Label text="X:" />
+		<Spinner fx:id="xSpin" editable="true" GridPane.columnIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Y:" GridPane.columnIndex="2" />
+		<Spinner fx:id="ySpin" editable="true" GridPane.columnIndex="3">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Width:" GridPane.rowIndex="1" />
+		<Spinner fx:id="widthSpin" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Height:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+		<Spinner fx:id="heightSpin" editable="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Arc Width:" GridPane.rowIndex="2" />
+		<Spinner fx:id="arcWidthSpin" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Arc Height:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+		<Spinner fx:id="arcHeightSpin" editable="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+			</valueFactory>
+		</Spinner>
+	</children>
+</GridPane>

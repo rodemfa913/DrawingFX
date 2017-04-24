@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.shape.PathProps">
+	<children>
+		<HBox alignment="CENTER_LEFT" spacing="5.0">
+			<children>
+				<Label text="Position:" />
+				<Spinner fx:id="xSpin" editable="true" prefWidth="75.0">
+					<valueFactory>
+						<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+					</valueFactory>
+				</Spinner>
+				<Spinner fx:id="ySpin" editable="true" prefWidth="75.0">
+					<valueFactory>
+						<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="0.0" />
+					</valueFactory>
+				</Spinner>
+			</children>
+		</HBox>
+		<Label text="Data:" />
+		<TextArea fx:id="dataText" prefHeight="200.0" prefWidth="200.0" wrapText="true">
+			<font>
+				<Font name="Monospaced Regular" size="13.0" />
+			</font>
+		</TextArea>
+	</children>
+</VBox>

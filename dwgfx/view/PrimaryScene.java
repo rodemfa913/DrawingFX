@@ -27,6 +27,7 @@ import javafx.stage.FileChooser.ExtensionFilter;
 /**
  * Primary scene controller.
  * @author rodemfa
+ */
 public class PrimaryScene implements Initializable {
 	@FXML private TreeView<Node> nodeTree;
 	@FXML private AnchorPane canvas;

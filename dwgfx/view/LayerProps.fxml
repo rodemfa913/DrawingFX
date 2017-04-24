@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox spacing="5.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.LayerProps">
+	<children>
+		<Label text="Opacity:" HBox.hgrow="NEVER" />
+		<Slider fx:id="opacitySlider" blockIncrement="5.0" majorTickUnit="50.0" minorTickCount="4" showTickMarks="true" HBox.hgrow="SOMETIMES" />
+		<CheckBox fx:id="visibleCheck" mnemonicParsing="false" text="Visible" HBox.hgrow="NEVER" />
+	</children>
+</HBox>

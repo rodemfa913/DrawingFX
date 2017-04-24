@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.SpinnerValueFactory.DoubleSpinnerValueFactory?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" vgap="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.DrawingProps">
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints hgrow="SOMETIMES" prefWidth="75.0" />
+		<ColumnConstraints hgrow="SOMETIMES" prefWidth="75.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+	<children>
+		<Label text="Size:" />
+		<Spinner fx:id="widthSpin" editable="true" GridPane.columnIndex="1">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="400.0" />
+			</valueFactory>
+		</Spinner>
+		<Spinner fx:id="heightSpin" editable="true" GridPane.columnIndex="2">
+			<valueFactory>
+				<SpinnerValueFactory.DoubleSpinnerValueFactory max="1600.0" min="400.0" />
+			</valueFactory>
+		</Spinner>
+		<Label text="Background:" GridPane.rowIndex="1" />
+		<ColorPicker fx:id="bgColorPicker" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+		<Label text="Stylesheet:" GridPane.rowIndex="2" />
+		<Button fx:id="styleButton" text="Choose..." GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" onAction="#handleStyle" />
+	</children>
+</GridPane>

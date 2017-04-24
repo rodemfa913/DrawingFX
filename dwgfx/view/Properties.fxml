@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="propsRoot" alignment="BOTTOM_CENTER" prefHeight="400" prefWidth="400" spacing="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dwgfx.view.Properties">
+	<children>
+		<HBox alignment="CENTER_LEFT" spacing="5.0">
+			<children>
+				<Label text="Id:" HBox.hgrow="NEVER" />
+				<TextField fx:id="idText" HBox.hgrow="SOMETIMES" />
+			</children>
+		</HBox>
+		<Label text="empty selection" />
+		<Button defaultButton="true" mnemonicParsing="false" onAction="#handleApply" text="Apply" />
+	</children>
+	<padding>
+		<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+	</padding>
+</VBox>

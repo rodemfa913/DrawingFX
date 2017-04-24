@@ -1,2 +1,2 @@
 # DrawingFX
-Drawing application.
+Drawing application using JavaFX.

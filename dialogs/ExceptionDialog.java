@@ -6,7 +6,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 
 /**
- * Shows a dialog with a descrition of the through exception.
+ * Shows a dialog with the exception details.
+ * reference: http://code.makery.ch/blog/javafx-dialogs-official/
+ * @author rodemfa
  */
 public final class ExceptionDialog extends Alert {
 	public ExceptionDialog(Exception ex) {

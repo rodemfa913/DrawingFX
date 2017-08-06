@@ -1,4 +1,4 @@
 # DrawingFX
 Drawing application using JavaFX.
 
-This project will be moved to JavaProjects repository.
+A new version of this project is in the JavaProjects repository.
